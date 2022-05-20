@@ -8,7 +8,7 @@ What it is
 
 Displaying multipe lines of text in a single column can make it hard to read the text and easy to lose track of the lines - especially on devices with a great screen width, like iPads.
 
-With iOS 9.0, Apple introduced [![readableContentGuide]](https://developer.apple.com/documentation/uikit/uiview/1622644-readablecontentguide) - a layout guide representing an area with a readable width within the view.
+With iOS 9.0, Apple introduced [readableContentGuide](https://developer.apple.com/documentation/uikit/uiview/1622644-readablecontentguide) - a layout guide representing an area with a readable width within the view.
 
 UI components that follow this layout guide automatically adjust their width accordingly to provide a better reading experience, while taking screen size, orientation, multitasking and even dynamic type size into account.
 
@@ -51,11 +51,10 @@ Install
 ### Swift Package Manager
 
 ```
-https://github.com/yazio/SwiftUI-ReadableContentGuide 
+https://github.com/yazio/ReadabilityModifier
 ```
 
 We are hiring
 -------------
 
-If you are interested in working on a well architected Nutrition & Health-App in a fully remote position, we´d love to hear from you!
-[![Check our open positions]](https://www.yazio.com/en/jobs) and feel free to reach out if you have any questions.
+If you are interested in working on a well architected Nutrition & Health-App in a fully remote position, we´d love to hear from you! [Check our open positions](https://www.yazio.com/en/jobs) and feel free to reach out if you have any questions.
