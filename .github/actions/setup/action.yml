@@ -1,0 +1,8 @@
+name: Setup
+description: Setup iOS CI Environment
+runs:
+  using: composite
+  steps:
+  - name: Install Ruby Gems
+    run: bundle install
+    shell: bash
