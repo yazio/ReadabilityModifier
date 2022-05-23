@@ -1,3 +1,5 @@
+![Test package](https://github.com/yazio/ReadabilityModifier/actions/workflows/ios.yml/badge.svg)
+
 ReadabilityModifier
 ===============================
 
