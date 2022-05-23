@@ -1,11 +1,26 @@
 .DS_Store
-/.build
 /Packages
 /*.xcodeproj
 xcuserdata/
 DerivedData/
-.swiftpm/config/registries.json
-.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
 .idea
 *.ipa
+
+
+# AppCode
+.idea/
+
+# other
+build/
+
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.swiftpm
+.build/
+Package.resolved
+
+# Test artifacts
+Tests/Artifacts
