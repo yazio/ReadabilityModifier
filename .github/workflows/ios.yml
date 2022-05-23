@@ -12,6 +12,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - uses: ./.github/actions/setup
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.7'
