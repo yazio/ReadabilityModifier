@@ -2,7 +2,6 @@ import SwiftUI
 
 public extension View
 {
-
     /// Modifies width of a SwiftUI View by using UIViews readableContentGuide. Also observes orientation and size changes to force a redraw.
     /// - Parameter extraSpacing: Adds more horizontal spacing
     /// - Parameter type: Select if the Readable Content Guide should be respected by applying eiter a horizontal padding or by
@@ -20,4 +19,3 @@ public extension View
         )
     }
 }
-

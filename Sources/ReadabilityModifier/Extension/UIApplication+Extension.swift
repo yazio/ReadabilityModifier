@@ -7,7 +7,10 @@ public extension UIApplication
     ///
     var isSplitOrSlideOver: Bool
     {
-        guard let window = self.windows.filter({ $0.isKeyWindow }).first else { return false }
+        guard let window = windows
+            .filter(\.isKeyWindow)
+            .first
+        else { return false }
         return !(window.frame.width == window.screen.bounds.width)
     }
 

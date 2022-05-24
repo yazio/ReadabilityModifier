@@ -1,6 +1,6 @@
-import XCTest
-import SwiftUI
 @testable import ReadabilityModifier
+import SwiftUI
+import XCTest
 
 private struct UnderlyingViewControllerTestView: View
 {
@@ -17,7 +17,7 @@ private struct UnderlyingViewControllerTestView: View
         }
         .underlyingViewController
         {
-            viewController in
+            _ in
             completionHandler()
         }
     }
@@ -29,7 +29,7 @@ class UnderlyingViewControllerTest: XCTestCase
     {
         let expectation = XCTestExpectation()
 
-        let view = UnderlyingViewControllerTestView()
+        let view = UnderlyingViewControllerTestView
         {
             expectation.fulfill()
         }

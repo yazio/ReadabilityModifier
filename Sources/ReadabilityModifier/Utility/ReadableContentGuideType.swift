@@ -4,5 +4,6 @@ import Foundation
 /// Can be helpful to avoid strange animations and to nest multiple views with readableContentGuide, so that the padding does not stack.
 public enum ReadableContentGuideType
 {
-    case padding, width
+    case padding
+    case width
 }

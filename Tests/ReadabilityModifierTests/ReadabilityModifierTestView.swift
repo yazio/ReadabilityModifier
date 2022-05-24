@@ -1,5 +1,5 @@
-import SwiftUI
 import ReadabilityModifier
+import SwiftUI
 
 struct ReadabilityModifierTestView: View
 {
@@ -19,13 +19,13 @@ struct ReadabilityModifierTestView: View
 
                     Color.white
                         .onChange(of: geometry.size.width)
-                    {
-                        newWidth in
-                        if newWidth > 0
                         {
-                            onWidthSet(newWidth)
+                            newWidth in
+                            if newWidth > 0
+                            {
+                                onWidthSet(newWidth)
+                            }
                         }
-                    }
                 }
                 .fitToReadableContentGuide(
                     extraSpacing: extraSpacing,

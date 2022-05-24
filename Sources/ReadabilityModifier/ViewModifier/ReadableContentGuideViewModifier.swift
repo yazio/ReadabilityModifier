@@ -83,7 +83,7 @@ public struct ReadableContentGuideViewModifier: ViewModifier
                     }
             }
         }
-        .observeFrame(rect: self.$rect)
+        .observeFrame(rect: $rect)
     }
 
     private func updateWidthAndPadding(

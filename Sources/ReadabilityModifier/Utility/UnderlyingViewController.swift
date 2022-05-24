@@ -1,9 +1,10 @@
-import UIKit
 import SwiftUI
+import UIKit
 
 extension View
 {
-    func inject<SomeView>(_ view: SomeView) -> some View where SomeView: View {
+    func inject<SomeView: View>(_ view: SomeView) -> some View
+    {
         overlay(view.frame(width: 0, height: 0))
     }
 
@@ -11,7 +12,7 @@ extension View
     {
         inject(
             UIKitUnderlyingViewController(
-                selector: { $0.parent },
+                selector: \.parent,
                 customize: customize
             )
         )
@@ -27,7 +28,7 @@ class UnderlyingUIViewController: UIViewController
     }
 
     @available(*, unavailable)
-    required init?(coder: NSCoder)
+    required init?(coder _: NSCoder)
     {
         fatalError("init(coder:) has not been implemented")
     }
@@ -35,7 +36,6 @@ class UnderlyingUIViewController: UIViewController
 
 struct UIKitUnderlyingViewController<TargetViewControllerType: UIViewController>: UIViewControllerRepresentable
 {
-
     let selector: (UnderlyingUIViewController) -> TargetViewControllerType?
     let customize: (TargetViewControllerType) -> Void
 
@@ -49,7 +49,7 @@ struct UIKitUnderlyingViewController<TargetViewControllerType: UIViewController>
     }
 
     func makeUIViewController(
-        context: UIViewControllerRepresentableContext<UIKitUnderlyingViewController>
+        context _: UIViewControllerRepresentableContext<UIKitUnderlyingViewController>
     ) -> UnderlyingUIViewController
     {
         UnderlyingUIViewController()
@@ -57,12 +57,13 @@ struct UIKitUnderlyingViewController<TargetViewControllerType: UIViewController>
 
     func updateUIViewController(
         _ uiViewController: UnderlyingUIViewController,
-        context: UIViewControllerRepresentableContext<UIKitUnderlyingViewController>
+        context _: UIViewControllerRepresentableContext<UIKitUnderlyingViewController>
     )
     {
         DispatchQueue.main.async
         {
-            guard let targetView = selector(uiViewController) else
+            guard let targetView = selector(uiViewController)
+            else
             {
                 return
             }
@@ -81,7 +82,7 @@ class UnderlyingUIView: UIView
     }
 
     @available(*, unavailable)
-    required init?(coder: NSCoder)
+    required init?(coder _: NSCoder)
     {
         fatalError("init(coder:) has not been implemented")
     }

@@ -1,6 +1,6 @@
-import XCTest
-import SwiftUI
 @testable import ReadabilityModifier
+import SwiftUI
+import XCTest
 
 class ReadableContentGuideTests: XCTestCase
 {
