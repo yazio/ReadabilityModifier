@@ -56,10 +56,33 @@ VStack {
 Install
 -------
 
+### Adding ReadabilityModifier as a package dependency
+
+1. Go to `Xcode` -> `Project Settings` and select your Project
+2. Select Tab `Package Dependencies` and click the +
+3. Paste `https://github.com/yazio/ReadabilityModifier` in the search bar and click on "Add Package"
+4. Selec the target(s) in which you want to use ReadabilityModifier
+
 ### Swift Package Manager
 
-```
-https://github.com/yazio/ReadabilityModifier
+Add ReadabilityModifier as a package dependency, like shown in the example below:
+```swift
+// swift-tools-version:5.6
+
+import PackageDescription
+
+let package = Package(
+  name: "YourProject",
+  platforms: [
+       .iOS(.v14),
+  ],
+  dependencies: [
+    .package(name: "ReadabilityModifier", url: "https://github.com/yazio/ReadabilityModifier.git", .branch("main"))
+  ],
+  targets: [
+    .target(name: "YourProject", dependencies: ["ReadabilityModifier"])
+  ]
+)
 ```
 
 We are hiring
