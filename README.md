@@ -11,10 +11,10 @@ What it is
 Displaying multipe lines of text in a single column can make it hard to read the text and easy to lose track of the lines - especially on devices with a great screen width, like iPads.
 
 ### With the modifier applied:
-![](example_images/example_with_modifier.png | width=400)
+![](example_images/example_with_modifier.png)
 
 ### Without the modifier:
-![](example_images/example_without_modifier.png | width=400)
+![](example_images/example_without_modifier.png)
 
 With iOS 9.0, Apple introduced [readableContentGuide](https://developer.apple.com/documentation/uikit/uiview/1622644-readablecontentguide) - a layout guide representing an area with a readable width within the view.
 
