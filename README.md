@@ -8,7 +8,7 @@ ReadabilityModifier
 What it is
 ----------
 
-Displaying multipe lines of text in a single column can make it hard to read the text and easy to lose track of the lines - especially on devices with a great screen width, like iPads.
+Displaying multiple lines of text in a single column can make it hard to read the text and easy to lose track of the lines - especially on devices with a great screen width, like iPads.
 
 ### With the modifier applied:
 ![](example_images/example_with_modifier.png)
@@ -25,7 +25,7 @@ What this package does
 
 Since readableContentGuide is part of UIKit, there is no direct alternative in SwiftUI. Alternative solutions, like applying a bigger padding depending on the horizontal size class, do not consider the variety of combinations of screen size, dynamic type size, etc. 
 
-ReadabilityModifier provides a simple ViewModifier that ports the original behaviour of UIKits readableContentGuide to every SwiftUI View that it is applied to - either by setting the width of the view, or by adding horizontal padding.
+ReadabilityModifier provides a simple ViewModifier that ports the original behavior of UIKits readableContentGuide to every SwiftUI View that it is applied to - either by setting the width of the view, or by adding horizontal padding.
 
 Usage
 -----
@@ -61,7 +61,7 @@ Install
 1. Go to `Xcode` -> `Project Settings` and select your Project
 2. Select Tab `Package Dependencies` and click the +
 3. Paste `https://github.com/yazio/ReadabilityModifier` in the search bar and click on "Add Package"
-4. Selec the target(s) in which you want to use ReadabilityModifier
+4. Select the target(s) in which you want to use ReadabilityModifier
 
 ### Swift Package Manager
 
@@ -88,4 +88,4 @@ let package = Package(
 We are hiring
 -------------
 
-If you are interested in working on a well architected Nutrition & Health-App in a fully remote position, we´d love to hear from you! [Check our open positions](https://www.yazio.com/en/jobs) and feel free to reach out if you have any questions.
+If you are interested in working on a well architected Nutrition & Health-App in a fully remote position, we'd love to hear from you! [Check our open positions](https://www.yazio.com/en/jobs) and feel free to reach out if you have any questions.
